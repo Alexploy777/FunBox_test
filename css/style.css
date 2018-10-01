@@ -1,4 +1,4 @@
-/* Generated on: Sun Sep 30 2018 18:26:46 GMT+0000 (UTC) */
+/* Generated on: Mon Oct 01 2018 08:06:12 GMT+0000 (UTC) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -12,28 +12,6 @@
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
-.item_block {
-  position: relative;
-  width: 320px;
-  height: 480px;
-  margin-bottom: 18px;
-  padding-left: 48px;
-  border-bottom-left-radius: 12px;
-  background-image: url("../images/5ba906683caae23e0a9ba010_Back-0.png"), url("../images/5ba902e1767541ae71bd9263_Photo.png"), url("../images/5ba902e174cfc72c582a75de_Back.png");
-  background-position: 0px 0px, -24px 176%, 0px 0px;
-  background-size: contain, 370px, contain;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  cursor: pointer;
-}
-
-.item_block.selected {
-  display: block;
-  background-image: url("../images/5ba9290ab05d4b4994e2f1e5_Back1-0.png"), url("../images/5ba906683caae23e0a9ba010_Back-0.png"), url("../images/5ba902e1767541ae71bd9263_Photo.png"), url("../images/5ba902e174cfc72c582a75de_Back.png");
-  background-position: 50% 50%, 0px 0px, -24px 176%, 0px 0px;
-  background-size: contain, contain, 370px, contain;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-}
-
 .text_top_defeault {
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
   color: #666;
@@ -54,16 +32,6 @@
 
 .text_brand_name.disable {
   color: #b3b3b3;
-}
-
-.text-block-3 {
-  padding-top: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
-  color: #000;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: left;
 }
 
 .text_option {
@@ -110,19 +78,6 @@
   text-align: center;
 }
 
-.item_wraper {
-  display: block;
-  min-width: 320px;
-  -webkit-box-ordinal-group: 0;
-  -webkit-order: -1;
-  -ms-flex-order: -1;
-  order: -1;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
-}
-
 .text_bottom_default {
   display: block;
   width: 100%;
@@ -132,10 +87,6 @@
   line-height: 13px;
   text-align: center;
   text-decoration: none;
-}
-
-.text_bottom_default.selected {
-  display: block;
 }
 
 .link {
@@ -149,38 +100,17 @@
   color: #2ea8e6;
 }
 
-.item_1_default {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: block;
-  min-width: 320px;
-}
-
-.item_1_selected {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  display: block;
-}
-
-.item_1 {
-  position: relative;
-  width: 320px;
-  height: 100%;
-  min-width: 320px;
-}
-
 .section_new {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  background-image: url("../images/5ba902e2264c469c2d0ad48a_Shadow.png"), url("../images/5ba902e1c3b46f042320c1a6_Pattern.png");
-  background-position: 50% 50%, 0px 0px;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .65), transparent 50%), -webkit-linear-gradient(270deg, rgba(0, 0, 0, .65), transparent 50%), url("../images/5ba902e1c3b46f042320c1a6_Pattern.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .65), transparent 50%), linear-gradient(180deg, rgba(0, 0, 0, .65), transparent 50%), url("../images/5ba902e1c3b46f042320c1a6_Pattern.png");
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: auto, auto, cover;
+  background-repeat: repeat, repeat, no-repeat;
 }
 
 .text-block-9 {
@@ -214,10 +144,6 @@
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-
-.text-span {
-  display: block;
 }
 
 .item_header {
@@ -311,11 +237,6 @@
 .itemnew_wraper_selected {
   display: none;
   width: 320px;
-}
-
-.itemnew_wraper_selected.wraper_selected {
-  display: none;
-  margin: 0px;
 }
 
 .itemnew_wraper_selected._3 {
@@ -418,27 +339,28 @@
 }
 
 @media (max-width: 991px) {
-  .item_block {
-    margin-top: 30px;
-  }
-  .item_1 {
-    height: 480px;
-    margin-bottom: 76px;
-  }
   .section_new {
     display: block;
     min-height: 1300px;
     padding-top: 60px;
   }
   .div_items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
   }
   .itemnew_wraper_selected {
-    margin-top: 20px;
-  }
-  .itemnew_wraper_selected.wraper_selected {
     margin-top: 20px;
   }
   .itemnew_wraper_selected._3 {
@@ -458,13 +380,6 @@
 @media (max-width: 767px) {
   .section_new {
     min-height: 1850px;
-  }
-}
-
-@media (max-width: 479px) {
-  .item_block {
-    min-width: 320px;
-    background-size: contain, 370px, contain;
   }
 }
 @font-face {
